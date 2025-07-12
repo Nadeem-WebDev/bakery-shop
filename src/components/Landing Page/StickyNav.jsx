@@ -4,6 +4,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoSearchOutline } from "react-icons/io5";
 import { useState, useContext } from "react";
 import { Data2Send } from "../../assets/BakeryData";
+import main from "../../assets/imgs/main.png"
 
 const StickyNav = () => {
   const [inp, setInp] = useState("");
@@ -16,7 +17,7 @@ const StickyNav = () => {
       <section className="flex flex-row items-center justify-between w-full sm:w-full md:w-full lg:w-fit">
         <div className="flex flex-row items-center">
           <img
-            src="src/assets/imgs/main.png"
+            src={main}
             alt="home icon"
             className="h-25 w-25"
           />

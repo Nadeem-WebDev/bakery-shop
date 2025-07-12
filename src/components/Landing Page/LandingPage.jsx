@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Data2Send } from '../../assets/BakeryData'
 import { useContext } from 'react'
-import { IoMdHeart } from 'react-icons/io';
 
 
 
