@@ -4,7 +4,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoSearchOutline } from "react-icons/io5";
 import { useState, useContext } from "react";
 import { Data2Send } from "../../assets/BakeryData";
-import main from "../../assets/imgs/main.png"
+import main from "./assets/imgs/main.png"
 
 const StickyNav = () => {
   const [inp, setInp] = useState("");
