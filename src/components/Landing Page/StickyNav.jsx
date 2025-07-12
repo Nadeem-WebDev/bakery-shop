@@ -44,7 +44,7 @@ const StickyNav = () => {
             onClick={() => filterInp(inp)}
           />
         </div>
-        <div className="flex flex-row text-3xl ">
+        <div className="flex flex-row text-3xl gap-2">
           <IoMdHeart className="hover:cursor-pointer hover:text-red-500" />
           <AiOutlineShoppingCart className="hover:cursor-pointer hover:text-blue-400" />
         </div>
