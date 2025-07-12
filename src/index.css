@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import "tailwindcss";
+@theme {
+  --font-cursive: "Pacifico"; 
+}
+*{
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    transition-duration: 0.3s;
+    /* padding: 0; */
+    /* margin: 0; */
+    /* overflow-x: hidden; */
+}
