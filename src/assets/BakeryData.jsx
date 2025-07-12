@@ -32,7 +32,7 @@ const BakeryData = ({children}) => {
 
     // filtering input
     const filterInp=(inp)=>{
-      const sortInp=bakeryData.filter(data=>data.title.toLowerCase().includes(inp))
+      const sortInp=bakeryData.filter(data=>data.title.toLowerCase().includes(inp.toLowerCase()))
       inp==="" ? setFilteredBakeryData(bakeryData):setFilteredBakeryData(sortInp);      
     }
  

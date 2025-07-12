@@ -19,7 +19,7 @@ const LandingPage = () => {
             <h1>Quality Products...</h1>
             <h1>with sweets, eggs & breads</h1>
             <p className='text-[15px]'>From the first loaf to the last pastry, we bake love and freshness into every bite. At our bakery, every visit feels like home.</p>
-            <Link to="/products" className='rounded-xl bg-amber-700 p-2 hover:cursor-pointer hover:bg-amber-800'>See All...</Link>
+            <Link to="/products" className='rounded-xl bg-amber-700 p-2 hover:cursor-pointer hover:bg-amber-800 text-gray-200'>See All...</Link>
         </div>
       </section>
       <section className='bg-linear-to-b from-purple-400 to-purple-600 p-5'>

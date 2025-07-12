@@ -14,12 +14,12 @@ const StickyNav = () => {
 
   return (
     <header className="w-full flex flex-row flex-wrap justify-between items-center gap-2 shadow-[0_2px_4px_0_rgba(0,0,0,0.4)] bg-gray-200 sticky top-0 z-9999 p-2 pt-0">
-      <section className="flex flex-row items-center justify-between gap-3 w-full sm:w-full md:w-full lg:w-fit">
-        <div className="flex flex-row items-center mt-5">
+      <section className="flex flex-row items-center justify-between gap-3 w-full sm:w-full md:w-full lg:w-fit mt-2">
+        <div className="flex flex-row items-center">
           <img src={main} alt="home icon" className="h-10 w-10 md:h-25 md:w-25" />
           <NavLink
             to="/"
-            className="text-md md:text-2xl  hover:text-yellow-600 text-yellow-500 hover:cursor-pointer"
+            className="text-xl md:text-2xl  hover:text-yellow-600 text-yellow-500 hover:cursor-pointer"
           >
             Honey's Bakery
           </NavLink>
@@ -39,10 +39,12 @@ const StickyNav = () => {
             className=" focus:outline-none text-xl placeholder:text-gray-500 placeholder:italic "
             onChange={(e) => setInp(e.target.value)}
           />
-          <IoSearchOutline
-            className="text-3xl hover:cursor-pointer "
-            onClick={() => filterInp(inp)}
-          />
+          <NavLink to="/products">
+            <IoSearchOutline
+              className="text-3xl hover:cursor-pointer "
+              onClick={() => filterInp(inp)}
+            />
+          </NavLink>
         </div>
         <div className="flex flex-row text-3xl gap-2">
           <IoMdHeart className="hover:cursor-pointer hover:text-red-500" />
