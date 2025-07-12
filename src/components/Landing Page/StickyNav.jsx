@@ -13,20 +13,20 @@ const StickyNav = () => {
   const { filterInp } = useContext(Data2Send);
 
   return (
-    <header className="w-full flex flex-row flex-wrap justify-between items-center shadow-[0_2px_4px_0_rgba(0,0,0,0.4)] bg-gray-200 sticky top-0 z-9999 p-2 pt-0">
-      <section className="flex flex-row items-center justify-between w-full sm:w-full md:w-full lg:w-fit">
-        <div className="flex flex-row items-center">
-          <img src={main} alt="home icon" className="h-25 w-25" />
+    <header className="w-full flex flex-row flex-wrap justify-between items-center gap-2 shadow-[0_2px_4px_0_rgba(0,0,0,0.4)] bg-gray-200 sticky top-0 z-9999 p-2 pt-0">
+      <section className="flex flex-row items-center justify-between gap-3 w-full sm:w-full md:w-full lg:w-fit">
+        <div className="flex flex-row items-center mt-5">
+          <img src={main} alt="home icon" className="h-10 w-10 md:h-25 md:w-25" />
           <NavLink
             to="/"
-            className="text-2xl  hover:text-yellow-600 text-yellow-500 hover:cursor-pointer"
+            className="text-md md:text-2xl  hover:text-yellow-600 text-yellow-500 hover:cursor-pointer"
           >
             Honey's Bakery
           </NavLink>
         </div>
         <NavLink
           to="/products"
-          className="text-xl ml-4 hover:text-purple-700 w-50 text-purple-400 text-center hover:cursor-pointer hover:scale-98 border rounded-xl px-5 py-2"
+          className="text-xl hover:text-purple-700 text-purple-400 text-center hover:cursor-pointer hover:scale-98 border rounded-xl px-5 py-2"
         >
           Buy Now!!!
         </NavLink>
