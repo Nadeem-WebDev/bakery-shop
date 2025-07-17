@@ -2,14 +2,13 @@ import {useState,useContext,useEffect} from 'react'
 import { Data2Send } from '../../assets/BakeryData';
 
 
-const Filters = ({filteredBakeryData,setFilteredBakeryData,setCurrPage}) => {
+const Filters = ({filteredBakeryData,setFilteredBakeryData,setCurrPage,mobileFilter,setMobileFilter}) => {
     const [priceOrder, setPriceOrder] = useState(null);
     const [rating, setRating] = useState(null);
     const [priceRange, setPriceRange] = useState([]);
     const [type, setType] = useState([])
     const [flavor, setFlavor] = useState([])
     const {bakeryData}=useContext(Data2Send);
-    // const [check, setCheck] = useState(true)
 
     // price order filtering
     useEffect(() => {
@@ -77,16 +76,15 @@ const Filters = ({filteredBakeryData,setFilteredBakeryData,setCurrPage}) => {
 
     }, [flavor]);
 
-    // i/p search filtering
 
 
 
 
   return (
-    <section className='w-[30%] sm:w-[30%] md:w-[15%] md:block h-full p-3 flex flex-col gap-2'>
+    <section className={`${mobileFilter===false ? "w-[0%] hidden":"w-full h-fit block"} md:block md:w-[15%] md:h-full p-3 flex flex-col gap-2`}>
         <div className='flex flex-row justify-between'>
             <h1 className="font-semibold" >Filters</h1>
-            <button className="font-semibold hover:cursor-pointer" >Clear</button>
+            <button className="font-semibold hover:cursor-pointer">Clear</button>
         </div>
         <hr />
         <form>

@@ -15,18 +15,16 @@ const StickyNav = () => {
   return (
     <header className="w-full flex flex-row flex-wrap justify-between items-center gap-2 shadow-[0_2px_4px_0_rgba(0,0,0,0.4)] bg-gray-200 sticky top-0 z-9999 p-2 pt-0">
       <section className="flex flex-row items-center justify-between gap-3 w-full sm:w-full md:w-full lg:w-fit mt-2">
-        <div className="flex flex-row items-center">
+        <NavLink
+          to="/"
+          className="flex flex-row items-center text-xl md:text-2xl hover:text-yellow-600 text-yellow-500 hover:cursor-pointer active:scale-95"
+        >
           <img src={main} alt="home icon" className="h-10 w-10 md:h-25 md:w-25" />
-          <NavLink
-            to="/"
-            className="text-xl md:text-2xl  hover:text-yellow-600 text-yellow-500 hover:cursor-pointer"
-          >
-            Honey's Bakery
-          </NavLink>
-        </div>
+          Honey's Bakery
+        </NavLink>
         <NavLink
           to="/products"
-          className="text-xl hover:text-purple-700 text-purple-400 text-center hover:cursor-pointer hover:scale-98 border rounded-xl px-5 py-2"
+          className="text-xl hover:text-purple-700 text-purple-400 text-center hover:cursor-pointer hover:scale-98 active:scale-95 border rounded-xl px-5 py-2"
         >
           Buy Now!!!
         </NavLink>
@@ -47,8 +45,8 @@ const StickyNav = () => {
           </NavLink>
         </div>
         <div className="flex flex-row text-3xl gap-2">
-          <IoMdHeart className="hover:cursor-pointer hover:text-red-500" />
-          <AiOutlineShoppingCart className="hover:cursor-pointer hover:text-blue-400" />
+          <IoMdHeart className="hover:cursor-pointer hover:text-red-500 active:text-red-500" />
+          <AiOutlineShoppingCart className="hover:cursor-pointer hover:text-blue-400 active:text-blue-400" />
         </div>
       </section>
     </header>
