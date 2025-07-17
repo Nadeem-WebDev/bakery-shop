@@ -13,8 +13,8 @@ const LandingPage = () => {
 
   return (
     <div className='flex flex-col'>
-      <section className='flex flex-col items-center justify-center h-85 w-full bg-linear-to-b from-purple-300 to-purple-400 font-cursive relative'>
-        <img src={pancake} alt="product" className='h-40 w-40 absolute top-18 left-[25%] md:top-auto md:left-20 md:h-80 md:w-80 z-0' />
+      <section className='flex flex-col items-center justify-center h-85 w-full bg-linear-to-b from-purple-300 to-purple-400 font-cursive relative pb-5'>
+        <img src={pancake} alt="product" className='h-40 w-40 md:absolute md:top-auto md:left-20 md:h-80 md:w-80' />
         <div className='flex flex-col items-start justify-evenly w-[90%] md:w-120 h-60 text-2xl z-100 text-gray-700'>
             <h1>Quality Products...</h1>
             <h1>with sweets, eggs & breads</h1>
